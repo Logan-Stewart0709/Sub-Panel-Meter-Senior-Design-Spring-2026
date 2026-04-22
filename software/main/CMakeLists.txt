@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "adc_hal.c"
+        "ADS131M0x.c"
+        "metering.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        esp_driver_spi
+        esp_driver_gpio
+        esp_driver_ledc
+        log
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        mqtt
+)
