@@ -3,13 +3,21 @@
 Known issues:
 
   When testing on the LabVolt machine, powering the main board with 12V AC and metering a phase where the negative terminal of the power and PT input is tied to neutral and R34 and the negative PT terminal input are both tied to ground, one of the rectifier diodes burns up. Reason unknown.
+  
   Current readings are unreliable, potentially due to too high of tolerance (5%), may be fixed y a lower tolerance (0.1%)?
+  
   AC power input does not work. When 12V AC is input to the main board power (via function generator, not LabVolt machine), the signal clips between 0V and 6.25V, reason unknown. Works with 12V DC.
+  
 Recommended additions:
+
   User interface utilizing the I2C port to connect to the network and calibrate system.
+  
   Find a way to automatically select the correct resistor ladder for the nominal voltage input by user or auto detect the voltage instead of using jumpers.
+  
   Implement code to incorperate the SD card black box. (Stores sent data in a FIFO queue to save data in the event of a power outage for later analysis)
+  
   Implement more precise setup for the ADC instead of using the "fast startup" feature.
+  
   Implement pinging function to send 30s packages and send 15 min packages by default.
 
   Current hardware signal flow (at nominal values):
