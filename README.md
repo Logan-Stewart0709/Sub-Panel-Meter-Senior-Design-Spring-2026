@@ -20,7 +20,10 @@ Recommended additions:
   
   Implement pinging function to send 30s packages and send 15 min packages by default.
 
+Hardware Description:
+
   Current hardware signal flow (at nominal values):
+
     CT_IN = 0.33Vpk -> Level Shift, Boost, and Invert -> C1 = 1.14Vpk + 1.2V (inverted wave) ->Level Shift, Invert, and Buffer -> C_ADC = 1.14Vpk + 1.2V
   Voltage hardware signal flow (at nominal value)
     PT_IN = 12Vrms (16.97Vpk) -> Resistor ladder -> V_IN = 1.14Vpk -> Level Shift, Buffer, Invert -> V1 = 1.14Vpk + 1.2V (inverted wave) -> Level Shift, Buffer, and Invert -> V_ADC = 1.14Vpk + 1.2V
