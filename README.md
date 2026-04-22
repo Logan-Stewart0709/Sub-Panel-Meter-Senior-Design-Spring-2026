@@ -20,6 +20,8 @@ Recommended additions:
   
   Implement pinging function to send 30s packages and send 15 min packages by default.
 
+  Trip detection?
+
 Hardware Description:
 
   Current hardware signal flow (at nominal values):
